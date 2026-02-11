@@ -1,0 +1,35 @@
+name: Discord Webhook
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send message
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{"content":"system working 🟢\n\nServer ID : 1"}' \
+          https://discord.com/api/webhooks/1471221040599400721/CsLPJmOCNnhrHkiSbRF0lrurhys11RMkqqvumSz0mjvYXuZ8lDlgtpFmRzuwJnWkRnHO
+
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{"content":"system working 🟢\n\nServer ID : 1"}' \
+          https://discord.com/api/webhooks/1471221593295290570/qpMjpwMX19csyAddU2LJa2zvZP7FEOdM3RRbjuXwzpRZySD7aDyLmVdD2M0t0yFHZd67
+
+
+                    curl -X POST -H "Content-Type: application/json" \
+          -d '{"content":"system working 🟢\n\nServer ID : 1"}' \
+          https://discord.com/api/webhooks/1471222010557235572/PQ9M4KHluD7k4K6C3ghZ9Gq7wz7Z19rDq1bqsFI08Jo4I-zMBJp3B6KFCCs7ptac4BFA
+
+
+                    curl -X POST -H "Content-Type: application/json" \
+          -d '{"content":"system working 🟢\n\nServer ID : 1"}' \
+          https://discord.com/api/webhooks/1471222254095437876/_dE8J0bDyE3rgIH90pjzcq98dPwj-8kscBo7eYpGEKpyn2sjv6cnVcnyGCRV1Rfu1mvh
+
+                    curl -X POST -H "Content-Type: application/json" \
+          -d '{"content":"system working 🟢\n\nServer ID : 1"}' \
+          https://discord.com/api/webhooks/1471222405048565951/eF4goG3uPo0pEmIvIg2YZsee_FYyt2comqLtXNHUotyxiiAlhpgOAw32lcusDJw4_V1D
+          
